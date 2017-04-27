@@ -13,6 +13,9 @@ class Dad_M: UIViewController {
     
     fileprivate var firstViewController : Dad_A!
     fileprivate var secondViewController : Dad_B!
+    fileprivate var mainVC : Dad_M!
+    
+    @IBOutlet weak var dadJoke: UILabel!
     
     fileprivate func firstBuilder() {
         if firstViewController == nil {
@@ -31,10 +34,20 @@ class Dad_M: UIViewController {
         }
     }
     
+    fileprivate func mainBuilder() {
+        if mainVC == nil {
+            mainVC =
+                storyboard?
+                    .instantiateViewController(withIdentifier: "dadm")
+                as! Dad_M
+        }
+    }
+    
     @IBAction func switchViews(_ sender: UIButton) {
+        dadJoke.text = ""
         firstBuilder()
         secondBuilder()
-        
+        mainBuilder()
         
         UIView.beginAnimations("View Flip", context: nil)
         UIView.setAnimationDuration(0.4)
@@ -46,11 +59,18 @@ class Dad_M: UIViewController {
             secondViewController.view.frame = view.frame
             switchViewController(firstViewController, to: secondViewController)
         }
-        else {
+        else if secondViewController != nil &&
+            secondViewController?.view.superview != nil{
+            UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
+            mainVC.view.frame = view.frame
+            switchViewController(secondViewController, to: mainVC)
+
+           
+        }else{
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             firstViewController.view.frame = view.frame
-            switchViewController(secondViewController, to: firstViewController)
-        }
+            switchViewController(mainVC, to: firstViewController)
+                    }
         UIView.commitAnimations()
     }
     

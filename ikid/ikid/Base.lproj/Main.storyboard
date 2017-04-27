@@ -85,25 +85,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsJ-2C-CuK">
-                                <rect key="frame" x="129" y="232" width="8" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ses-f5-gyB">
-                                <rect key="frame" x="91" y="428" width="46" height="30"/>
+                                <rect key="frame" x="283" y="580" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchViews:" destination="vwK-K8-o7e" eventType="primaryActionTriggered" id="dRd-Fh-E0v"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" text="Dad joke!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcq-Jp-xWU">
+                                <rect key="frame" x="111" y="311.5" width="153.5" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tcq-Jp-xWU" firstAttribute="centerX" secondItem="Uxd-xh-h10" secondAttribute="centerX" id="FrN-ri-8Ci"/>
+                            <constraint firstItem="Tcq-Jp-xWU" firstAttribute="centerY" secondItem="Uxd-xh-h10" secondAttribute="centerY" id="jvO-MW-Wd5"/>
+                            <constraint firstItem="Tcq-Jp-xWU" firstAttribute="centerX" secondItem="Uxd-xh-h10" secondAttribute="centerX" id="mDO-xB-pjc"/>
+                            <constraint firstItem="Tcq-Jp-xWU" firstAttribute="centerY" secondItem="Uxd-xh-h10" secondAttribute="centerY" id="zhl-f6-gDW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FrN-ri-8Ci"/>
+                                <exclude reference="jvO-MW-Wd5"/>
+                                <exclude reference="mDO-xB-pjc"/>
+                                <exclude reference="zhl-f6-gDW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="jvO-MW-Wd5"/>
+                                <include reference="mDO-xB-pjc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="FrN-ri-8Ci"/>
+                                <include reference="zhl-f6-gDW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="dGz-29-gFK"/>
+                    <connections>
+                        <outlet property="dadJoke" destination="Tcq-Jp-xWU" id="5tO-JC-jas"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBH-0G-X8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,15 +149,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gA-4g-FXt">
-                                <rect key="frame" x="147" y="297" width="27" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you make a Kleenex dance?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gA-4g-FXt">
+                                <rect key="frame" x="2.5" y="320" width="370" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7gA-4g-FXt" firstAttribute="centerX" secondItem="UF7-Na-byu" secondAttribute="centerX" id="6tm-Uu-MTz"/>
+                            <constraint firstItem="7gA-4g-FXt" firstAttribute="centerY" secondItem="UF7-Na-byu" secondAttribute="centerY" id="cGz-D6-Vv8"/>
+                            <constraint firstItem="7gA-4g-FXt" firstAttribute="centerY" secondItem="UF7-Na-byu" secondAttribute="centerY" id="cK6-OD-86f"/>
+                            <constraint firstItem="7gA-4g-FXt" firstAttribute="centerX" secondItem="UF7-Na-byu" secondAttribute="centerX" id="oqn-HP-FMm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6tm-Uu-MTz"/>
+                                <exclude reference="cGz-D6-Vv8"/>
+                                <exclude reference="cK6-OD-86f"/>
+                                <exclude reference="oqn-HP-FMm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6tm-Uu-MTz"/>
+                                <include reference="cK6-OD-86f"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="cGz-D6-Vv8"/>
+                                <include reference="oqn-HP-FMm"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTI-m3-iie" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -148,20 +201,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDa-kN-MiG">
-                                <rect key="frame" x="67" y="296" width="27" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put a little boogie in it!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMJ-tl-fuK">
+                                <rect key="frame" x="74" y="319.5" width="227" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eMJ-tl-fuK" firstAttribute="centerY" secondItem="A5b-PT-TOJ" secondAttribute="centerY" id="7yZ-iO-Fcj"/>
+                            <constraint firstItem="eMJ-tl-fuK" firstAttribute="centerX" secondItem="A5b-PT-TOJ" secondAttribute="centerX" id="KWQ-hH-hw3"/>
+                            <constraint firstItem="eMJ-tl-fuK" firstAttribute="centerY" secondItem="A5b-PT-TOJ" secondAttribute="centerY" id="Qbk-Tc-UNj"/>
+                            <constraint firstItem="eMJ-tl-fuK" firstAttribute="centerX" secondItem="A5b-PT-TOJ" secondAttribute="centerX" id="zFL-IH-dMU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7yZ-iO-Fcj"/>
+                                <exclude reference="KWQ-hH-hw3"/>
+                                <exclude reference="Qbk-Tc-UNj"/>
+                                <exclude reference="zFL-IH-dMU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="7yZ-iO-Fcj"/>
+                                <include reference="zFL-IH-dMU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="KWQ-hH-hw3"/>
+                                <include reference="Qbk-Tc-UNj"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Se1-oI-K5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="-499"/>
+            <point key="canvasLocation" x="1845.5999999999999" y="-499.70014992503752"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6BL-LX-r7f">
