@@ -238,6 +238,9 @@
 		49B406271EB15A8E00761628 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					eh,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Ethan McGregor";
