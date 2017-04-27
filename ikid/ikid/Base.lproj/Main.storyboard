@@ -380,6 +380,366 @@
             </objects>
             <point key="canvasLocation" x="1845.5999999999999" y="-499.70014992503752"/>
         </scene>
+        <!--Knock-A-->
+        <scene sceneID="Zx9-8R-zf6">
+            <objects>
+                <viewController storyboardIdentifier="KnockA" title="Knock-A" id="2DO-gD-ppP" customClass="Knock_A" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z6e-b5-cuk"/>
+                        <viewControllerLayoutGuide type="bottom" id="qZL-fY-TMQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z7U-ZV-efh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHO-Xz-kMh">
+                                <rect key="frame" x="56" y="312" width="263" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Knock, Knock!">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OHO-Xz-kMh" firstAttribute="centerX" secondItem="Z7U-ZV-efh" secondAttribute="centerX" id="Y2d-i8-z34"/>
+                            <constraint firstItem="OHO-Xz-kMh" firstAttribute="centerY" secondItem="Z7U-ZV-efh" secondAttribute="centerY" id="hIY-2U-lZe"/>
+                            <constraint firstItem="OHO-Xz-kMh" firstAttribute="centerY" secondItem="Z7U-ZV-efh" secondAttribute="centerY" id="qD3-3G-3v1"/>
+                            <constraint firstItem="OHO-Xz-kMh" firstAttribute="centerX" secondItem="Z7U-ZV-efh" secondAttribute="centerX" id="sVP-Eo-nsv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Y2d-i8-z34"/>
+                                <exclude reference="hIY-2U-lZe"/>
+                                <exclude reference="qD3-3G-3v1"/>
+                                <exclude reference="sVP-Eo-nsv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="qD3-3G-3v1"/>
+                                <include reference="sVP-Eo-nsv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Y2d-i8-z34"/>
+                                <include reference="hIY-2U-lZe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wj-r9-tD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-569" y="-2420"/>
+        </scene>
+        <!--KnockB-->
+        <scene sceneID="CW3-O6-CzQ">
+            <objects>
+                <viewController storyboardIdentifier="KnockB" id="kS2-Yp-A4S" customClass="Knock_B" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e0T-Ev-kei"/>
+                        <viewControllerLayoutGuide type="bottom" id="dag-6A-i20"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rEM-w3-GwE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9Q-WK-cGT">
+                                <rect key="frame" x="72.5" y="312" width="230.5" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Who's there?">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v9Q-WK-cGT" firstAttribute="centerY" secondItem="rEM-w3-GwE" secondAttribute="centerY" id="78J-2i-D9K"/>
+                            <constraint firstItem="v9Q-WK-cGT" firstAttribute="centerY" secondItem="rEM-w3-GwE" secondAttribute="centerY" id="WCi-vW-Ksz"/>
+                            <constraint firstItem="v9Q-WK-cGT" firstAttribute="centerX" secondItem="rEM-w3-GwE" secondAttribute="centerX" id="a0D-2V-RNT"/>
+                            <constraint firstItem="v9Q-WK-cGT" firstAttribute="centerX" secondItem="rEM-w3-GwE" secondAttribute="centerX" id="aIn-Ls-qnG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="78J-2i-D9K"/>
+                                <exclude reference="WCi-vW-Ksz"/>
+                                <exclude reference="a0D-2V-RNT"/>
+                                <exclude reference="aIn-Ls-qnG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="WCi-vW-Ksz"/>
+                                <include reference="a0D-2V-RNT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="78J-2i-D9K"/>
+                                <include reference="aIn-Ls-qnG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMb-uI-Lpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-2420"/>
+        </scene>
+        <!--Knock-C-->
+        <scene sceneID="cuZ-xf-iyy">
+            <objects>
+                <viewController storyboardIdentifier="KnockC" title="Knock-C" id="Q7o-eK-ojR" customClass="Knock_C" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="loI-oK-XOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="hhA-Y4-wDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SK0-Ko-HwW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vog-UX-kZ8">
+                                <rect key="frame" x="22" y="312" width="331" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="very long pause.....">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vog-UX-kZ8" firstAttribute="centerX" secondItem="SK0-Ko-HwW" secondAttribute="centerX" id="89B-AG-JXG"/>
+                            <constraint firstItem="vog-UX-kZ8" firstAttribute="centerY" secondItem="SK0-Ko-HwW" secondAttribute="centerY" id="NrU-b4-0Pi"/>
+                            <constraint firstItem="vog-UX-kZ8" firstAttribute="centerX" secondItem="SK0-Ko-HwW" secondAttribute="centerX" id="fuH-LA-X1r"/>
+                            <constraint firstItem="vog-UX-kZ8" firstAttribute="centerY" secondItem="SK0-Ko-HwW" secondAttribute="centerY" id="iYH-12-aaX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="89B-AG-JXG"/>
+                                <exclude reference="NrU-b4-0Pi"/>
+                                <exclude reference="fuH-LA-X1r"/>
+                                <exclude reference="iYH-12-aaX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="NrU-b4-0Pi"/>
+                                <include reference="fuH-LA-X1r"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="89B-AG-JXG"/>
+                                <include reference="iYH-12-aaX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjC-46-1Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="-2420"/>
+        </scene>
+        <!--Knock-D-->
+        <scene sceneID="Fc6-Cb-YFF">
+            <objects>
+                <viewController storyboardIdentifier="KnockD" title="Knock-D" id="h49-XZ-hcV" customClass="Knock_D" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGS-oa-ywn"/>
+                        <viewControllerLayoutGuide type="bottom" id="QbM-E3-F2U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CJT-S5-MNN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCn-yG-LuF">
+                                <rect key="frame" x="144.5" y="312" width="86" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Java">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qCn-yG-LuF" firstAttribute="centerY" secondItem="CJT-S5-MNN" secondAttribute="centerY" id="3Wh-GC-Yhx"/>
+                            <constraint firstItem="qCn-yG-LuF" firstAttribute="centerX" secondItem="CJT-S5-MNN" secondAttribute="centerX" id="8e7-0V-qWz"/>
+                            <constraint firstItem="qCn-yG-LuF" firstAttribute="centerY" secondItem="CJT-S5-MNN" secondAttribute="centerY" id="SRf-iA-fVO"/>
+                            <constraint firstItem="qCn-yG-LuF" firstAttribute="centerX" secondItem="CJT-S5-MNN" secondAttribute="centerX" id="YHa-yx-EG6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Wh-GC-Yhx"/>
+                                <exclude reference="8e7-0V-qWz"/>
+                                <exclude reference="SRf-iA-fVO"/>
+                                <exclude reference="YHa-yx-EG6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="SRf-iA-fVO"/>
+                                <include reference="YHa-yx-EG6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3Wh-GC-Yhx"/>
+                                <include reference="8e7-0V-qWz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2K-vV-eO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="-1688"/>
+        </scene>
+        <!--Knock-E-->
+        <scene sceneID="bvk-SA-2fn">
+            <objects>
+                <viewController storyboardIdentifier="KnockE" title="Knock-E" id="Ugg-ke-hf8" customClass="Knock_E" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VqU-d0-wct"/>
+                        <viewControllerLayoutGuide type="bottom" id="hoL-9M-fKk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yQZ-Ac-FpK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5l-Ox-qnl">
+                                <rect key="frame" x="130.5" y="312" width="114" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="oh... :o">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S5l-Ox-qnl" firstAttribute="centerY" secondItem="yQZ-Ac-FpK" secondAttribute="centerY" id="7zi-rB-tud"/>
+                            <constraint firstItem="S5l-Ox-qnl" firstAttribute="centerX" secondItem="yQZ-Ac-FpK" secondAttribute="centerX" id="Eoz-AD-PDQ"/>
+                            <constraint firstItem="S5l-Ox-qnl" firstAttribute="centerY" secondItem="yQZ-Ac-FpK" secondAttribute="centerY" id="RRg-iz-mYU"/>
+                            <constraint firstItem="S5l-Ox-qnl" firstAttribute="centerX" secondItem="yQZ-Ac-FpK" secondAttribute="centerX" id="mi0-3b-cgI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7zi-rB-tud"/>
+                                <exclude reference="Eoz-AD-PDQ"/>
+                                <exclude reference="RRg-iz-mYU"/>
+                                <exclude reference="mi0-3b-cgI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="7zi-rB-tud"/>
+                                <include reference="mi0-3b-cgI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Eoz-AD-PDQ"/>
+                                <include reference="RRg-iz-mYU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjn-AG-P8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-1692"/>
+        </scene>
+        <!--Knock-M-->
+        <scene sceneID="TeM-rC-rXa">
+            <objects>
+                <viewController storyboardIdentifier="KnockM" title="Knock-M" id="eZL-hN-Xtl" customClass="Knock_M" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TKl-1m-6mc"/>
+                        <viewControllerLayoutGuide type="bottom" id="IV9-jF-3pQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eEy-xi-MBI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zez-wr-0ij">
+                                <rect key="frame" x="5" y="312" width="365.5" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Knock Knock Jokes!">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="next" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K4-JZ-dmp">
+                                <rect key="frame" x="313" y="588" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="eZL-hN-Xtl" eventType="primaryActionTriggered" id="EGT-Up-hoR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zez-wr-0ij" firstAttribute="centerY" secondItem="eEy-xi-MBI" secondAttribute="centerY" id="IB2-yG-sU7"/>
+                            <constraint firstItem="zez-wr-0ij" firstAttribute="centerX" secondItem="eEy-xi-MBI" secondAttribute="centerX" id="UIF-ac-DTG"/>
+                            <constraint firstItem="zez-wr-0ij" firstAttribute="centerY" secondItem="eEy-xi-MBI" secondAttribute="centerY" id="wXK-kN-G9f"/>
+                            <constraint firstItem="zez-wr-0ij" firstAttribute="centerX" secondItem="eEy-xi-MBI" secondAttribute="centerX" id="xgp-AW-sP0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IB2-yG-sU7"/>
+                                <exclude reference="UIF-ac-DTG"/>
+                                <exclude reference="wXK-kN-G9f"/>
+                                <exclude reference="xgp-AW-sP0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="UIF-ac-DTG"/>
+                                <include reference="wXK-kN-G9f"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IB2-yG-sU7"/>
+                                <include reference="xgp-AW-sP0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="liP-TP-NxM"/>
+                    <connections>
+                        <outlet property="punLable" destination="zez-wr-0ij" id="rzE-4B-Bn2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uf-fE-qdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="-996"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6BL-LX-r7f">
             <objects>
@@ -393,6 +753,7 @@
                         <segue destination="vwK-K8-o7e" kind="relationship" relationship="viewControllers" id="gfc-Nr-KdR"/>
                         <segue destination="IZB-Ds-qXa" kind="relationship" relationship="viewControllers" id="vKZ-JJ-ceq"/>
                         <segue destination="q8q-NM-TRJ" kind="relationship" relationship="viewControllers" id="HCt-0j-5hR"/>
+                        <segue destination="eZL-hN-Xtl" kind="relationship" relationship="viewControllers" id="Ahu-3j-Eai"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm0-O6-OeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -473,35 +834,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funny_movie.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ca4-TL-wjP">
-                                <rect key="frame" x="27.5" y="224.5" width="320" height="218"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fun.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ca4-TL-wjP">
+                                <rect key="frame" x="75" y="221" width="225" height="225"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="24k-Fu-pYV" firstAttribute="top" secondItem="ca4-TL-wjP" secondAttribute="bottom" constant="8" symbolic="YES" id="8tl-nU-msT"/>
-                            <constraint firstItem="ca4-TL-wjP" firstAttribute="top" secondItem="ecr-ft-Rhp" secondAttribute="top" id="eIM-gW-JHu"/>
+                            <constraint firstItem="ca4-TL-wjP" firstAttribute="centerY" secondItem="ecr-ft-Rhp" secondAttribute="centerY" id="Qe0-7r-5QK"/>
+                            <constraint firstItem="ca4-TL-wjP" firstAttribute="centerX" secondItem="ecr-ft-Rhp" secondAttribute="centerX" id="bag-vI-Fr0"/>
                             <constraint firstItem="ca4-TL-wjP" firstAttribute="centerX" secondItem="ecr-ft-Rhp" secondAttribute="centerX" id="imj-cr-kge"/>
                             <constraint firstItem="ca4-TL-wjP" firstAttribute="centerY" secondItem="ecr-ft-Rhp" secondAttribute="centerY" id="krj-1Z-wry"/>
-                            <constraint firstAttribute="trailing" secondItem="ca4-TL-wjP" secondAttribute="trailing" id="sCM-1X-CMr"/>
-                            <constraint firstItem="ca4-TL-wjP" firstAttribute="leading" secondItem="ecr-ft-Rhp" secondAttribute="leading" id="xAK-bh-Krj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="eIM-gW-JHu"/>
                                 <exclude reference="imj-cr-kge"/>
                                 <exclude reference="krj-1Z-wry"/>
-                                <exclude reference="sCM-1X-CMr"/>
-                                <exclude reference="xAK-bh-Krj"/>
-                                <exclude reference="8tl-nU-msT"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="eIM-gW-JHu"/>
-                                <include reference="sCM-1X-CMr"/>
-                                <include reference="xAK-bh-Krj"/>
-                                <include reference="8tl-nU-msT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -514,7 +861,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0y4-FJ-0Wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714.69265367316348" y="1252"/>
+            <point key="canvasLocation" x="-716" y="1251.7241379310346"/>
         </scene>
         <!--Good-B-->
         <scene sceneID="XYo-hV-ghs">
@@ -576,6 +923,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="funny_movie.gif" width="320" height="218"/>
+        <image name="fun.jpeg" width="225" height="225"/>
     </resources>
 </document>
