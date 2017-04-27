@@ -21,17 +21,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0i-Ha-jSu">
-                                <rect key="frame" x="88" y="88" width="10" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG7-ci-yqv">
+                                <rect key="frame" x="99" y="311.5" width="177" height="44.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pun">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" jokes!">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZZ-9H-DX4">
+                                <rect key="frame" x="292" y="580" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="IZB-Ds-qXa" eventType="primaryActionTriggered" id="ZsW-Ly-f27"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bG7-ci-yqv" firstAttribute="centerX" secondItem="tVN-xr-3Sl" secondAttribute="centerX" id="acb-vc-KAv"/>
+                            <constraint firstItem="bG7-ci-yqv" firstAttribute="centerY" secondItem="tVN-xr-3Sl" secondAttribute="centerY" id="c9R-oV-VpS"/>
+                            <constraint firstItem="bG7-ci-yqv" firstAttribute="centerY" secondItem="tVN-xr-3Sl" secondAttribute="centerY" id="cWz-Mf-vcN"/>
+                            <constraint firstItem="bG7-ci-yqv" firstAttribute="centerX" secondItem="tVN-xr-3Sl" secondAttribute="centerX" id="mTz-Hg-wxo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="acb-vc-KAv"/>
+                                <exclude reference="c9R-oV-VpS"/>
+                                <exclude reference="cWz-Mf-vcN"/>
+                                <exclude reference="mTz-Hg-wxo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="cWz-Mf-vcN"/>
+                                <include reference="mTz-Hg-wxo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="acb-vc-KAv"/>
+                                <include reference="c9R-oV-VpS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="BMO-nt-rmU"/>
+                    <connections>
+                        <outlet property="punLable" destination="bG7-ci-yqv" id="NJz-Ek-cof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhF-ey-bHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,7 +96,58 @@
                     <view key="view" contentMode="scaleToFill" id="1mO-A9-nQc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brl-f6-iZW">
+                                <rect key="frame" x="0.0" y="304.5" width="375" height="58"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">What's the worst thing about throwing a party in space?
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19.5" name="Arial-BoldMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="23" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="brl-f6-iZW" firstAttribute="centerX" secondItem="1mO-A9-nQc" secondAttribute="centerX" id="0Az-Od-fpe"/>
+                            <constraint firstItem="brl-f6-iZW" firstAttribute="centerY" secondItem="1mO-A9-nQc" secondAttribute="centerY" id="4h1-TR-4mX"/>
+                            <constraint firstItem="brl-f6-iZW" firstAttribute="centerX" secondItem="1mO-A9-nQc" secondAttribute="centerX" id="5ud-6e-HoA"/>
+                            <constraint firstItem="brl-f6-iZW" firstAttribute="centerY" secondItem="1mO-A9-nQc" secondAttribute="centerY" id="6dJ-kl-k3X"/>
+                            <constraint firstItem="brl-f6-iZW" firstAttribute="width" secondItem="1mO-A9-nQc" secondAttribute="width" id="mAL-Dv-1gl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Az-Od-fpe"/>
+                                <exclude reference="4h1-TR-4mX"/>
+                                <exclude reference="5ud-6e-HoA"/>
+                                <exclude reference="6dJ-kl-k3X"/>
+                                <exclude reference="mAL-Dv-1gl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4h1-TR-4mX"/>
+                                <include reference="5ud-6e-HoA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0Az-Od-fpe"/>
+                                <include reference="6dJ-kl-k3X"/>
+                                <include reference="mAL-Dv-1gl"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJU-A8-OoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,7 +165,47 @@
                     <view key="view" contentMode="scaleToFill" id="VTT-03-gdY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg4-Cc-inr">
+                                <rect key="frame" x="23.5" y="312" width="328" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You have to Planet">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sg4-Cc-inr" firstAttribute="centerY" secondItem="VTT-03-gdY" secondAttribute="centerY" id="HGm-Qu-7t9"/>
+                            <constraint firstItem="Sg4-Cc-inr" firstAttribute="centerX" secondItem="VTT-03-gdY" secondAttribute="centerX" id="aIq-dF-qXU"/>
+                            <constraint firstItem="Sg4-Cc-inr" firstAttribute="centerX" secondItem="VTT-03-gdY" secondAttribute="centerX" id="cqY-RV-L6w"/>
+                            <constraint firstItem="Sg4-Cc-inr" firstAttribute="centerY" secondItem="VTT-03-gdY" secondAttribute="centerY" id="mac-ob-1hh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HGm-Qu-7t9"/>
+                                <exclude reference="aIq-dF-qXU"/>
+                                <exclude reference="cqY-RV-L6w"/>
+                                <exclude reference="mac-ob-1hh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="HGm-Qu-7t9"/>
+                                <include reference="aIq-dF-qXU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="cqY-RV-L6w"/>
+                                <include reference="mac-ob-1hh"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ps4-g6-WKy" userLabel="First Responder" sceneMemberID="firstResponder"/>

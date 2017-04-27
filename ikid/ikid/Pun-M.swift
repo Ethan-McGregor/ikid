@@ -13,6 +13,9 @@ class Pun_M: UIViewController {
     
     fileprivate var firstViewController : Pun_A!
     fileprivate var secondViewController : Pun_B!
+    fileprivate var mainVC : Pun_M!
+    
+    @IBOutlet weak var punLable: UILabel!
     
     fileprivate func firstBuilder() {
         if firstViewController == nil {
@@ -31,14 +34,26 @@ class Pun_M: UIViewController {
         }
     }
     
+        fileprivate func mainBuilder() {
+            if mainVC == nil {
+                mainVC =
+                    storyboard?
+                        .instantiateViewController(withIdentifier: "PunM")
+                    as! Pun_M
+            }
+    }
+    
+    
     @IBAction func switchViews(_ sender: UIButton) {
+        punLable.text = ""
         firstBuilder()
         secondBuilder()
-        
+        mainBuilder()
         
         UIView.beginAnimations("View Flip", context: nil)
         UIView.setAnimationDuration(0.4)
         UIView.setAnimationCurve(.easeInOut)
+        
         
         if firstViewController != nil &&
             firstViewController?.view.superview != nil {
@@ -46,13 +61,21 @@ class Pun_M: UIViewController {
             secondViewController.view.frame = view.frame
             switchViewController(firstViewController, to: secondViewController)
         }
-        else {
+        else if secondViewController != nil &&
+            secondViewController?.view.superview != nil{
+            UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
+            mainVC.view.frame = view.frame
+            switchViewController(secondViewController, to: mainVC)
+            
+            
+        }else{
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             firstViewController.view.frame = view.frame
-            switchViewController(secondViewController, to: firstViewController)
+            switchViewController(mainVC, to: firstViewController)
         }
         UIView.commitAnimations()
     }
+    
     
     fileprivate func switchViewController(_ from: UIViewController?, to: UIViewController?) {
         if from != nil {
