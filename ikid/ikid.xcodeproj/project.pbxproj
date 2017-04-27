@@ -20,6 +20,10 @@
 		49B406691EB16CB300761628 /* Pun-M.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B406681EB16CB300761628 /* Pun-M.swift */; };
 		49B4066B1EB16CBF00761628 /* Pun-A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4066A1EB16CBF00761628 /* Pun-A.swift */; };
 		49B4066D1EB16CCA00761628 /* Pun-B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4066C1EB16CCA00761628 /* Pun-B.swift */; };
+		49B4066F1EB1AAB800761628 /* funny_movie.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49B4066E1EB1AAB800761628 /* funny_movie.gif */; };
+		49B406711EB1AC3D00761628 /* Good-M.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B406701EB1AC3D00761628 /* Good-M.swift */; };
+		49B406731EB1AC5600761628 /* Good-A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B406721EB1AC5600761628 /* Good-A.swift */; };
+		49B406751EB1AC5F00761628 /* Good-B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B406741EB1AC5F00761628 /* Good-B.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		49B406681EB16CB300761628 /* Pun-M.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pun-M.swift"; sourceTree = "<group>"; };
 		49B4066A1EB16CBF00761628 /* Pun-A.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pun-A.swift"; sourceTree = "<group>"; };
 		49B4066C1EB16CCA00761628 /* Pun-B.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pun-B.swift"; sourceTree = "<group>"; };
+		49B4066E1EB1AAB800761628 /* funny_movie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = funny_movie.gif; path = ../../../../funny_movie.gif; sourceTree = "<group>"; };
+		49B406701EB1AC3D00761628 /* Good-M.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Good-M.swift"; sourceTree = "<group>"; };
+		49B406721EB1AC5600761628 /* Good-A.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Good-A.swift"; sourceTree = "<group>"; };
+		49B406741EB1AC5F00761628 /* Good-B.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Good-B.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +123,16 @@
 				49B406391EB15A8E00761628 /* Assets.xcassets */,
 				49B4063B1EB15A8E00761628 /* LaunchScreen.storyboard */,
 				49B4063E1EB15A8E00761628 /* Info.plist */,
+				49B4066E1EB1AAB800761628 /* funny_movie.gif */,
 				49B406621EB16C7C00761628 /* Dad-M.swift */,
 				49B406641EB16C9400761628 /* Dad-A.swift */,
 				49B406661EB16CA200761628 /* Dad-B.swift */,
 				49B406681EB16CB300761628 /* Pun-M.swift */,
 				49B4066A1EB16CBF00761628 /* Pun-A.swift */,
 				49B4066C1EB16CCA00761628 /* Pun-B.swift */,
+				49B406701EB1AC3D00761628 /* Good-M.swift */,
+				49B406721EB1AC5600761628 /* Good-A.swift */,
+				49B406741EB1AC5F00761628 /* Good-B.swift */,
 			);
 			path = ikid;
 			sourceTree = "<group>";
@@ -252,6 +264,7 @@
 			files = (
 				49B4063D1EB15A8E00761628 /* LaunchScreen.storyboard in Resources */,
 				49B4063A1EB15A8E00761628 /* Assets.xcassets in Resources */,
+				49B4066F1EB1AAB800761628 /* funny_movie.gif in Resources */,
 				49B406381EB15A8E00761628 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +294,11 @@
 				49B406671EB16CA200761628 /* Dad-B.swift in Sources */,
 				49B406691EB16CB300761628 /* Pun-M.swift in Sources */,
 				49B406351EB15A8E00761628 /* ViewController.swift in Sources */,
+				49B406731EB1AC5600761628 /* Good-A.swift in Sources */,
+				49B406751EB1AC5F00761628 /* Good-B.swift in Sources */,
 				49B4066B1EB16CBF00761628 /* Pun-A.swift in Sources */,
 				49B406651EB16C9400761628 /* Dad-A.swift in Sources */,
+				49B406711EB1AC3D00761628 /* Good-M.swift in Sources */,
 				49B406631EB16C7C00761628 /* Dad-M.swift in Sources */,
 				49B406331EB15A8E00761628 /* AppDelegate.swift in Sources */,
 			);

@@ -402,7 +402,7 @@
         <!--Good_M-->
         <scene sceneID="y5H-wl-1C7">
             <objects>
-                <viewController storyboardIdentifier="GoodM" title="Good_M" id="q8q-NM-TRJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoodM" title="Good_M" id="q8q-NM-TRJ" customClass="Good_M" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="38G-Rd-CyA"/>
                         <viewControllerLayoutGuide type="bottom" id="TS2-Lm-2Wr"/>
@@ -411,26 +411,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJu-8I-iNB">
-                                <rect key="frame" x="132" y="147" width="11" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q4-da-Dyk">
+                                <rect key="frame" x="79" y="312" width="217" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Good Jokes!">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5y-GI-avN">
+                                <rect key="frame" x="303" y="580" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="q8q-NM-TRJ" eventType="primaryActionTriggered" id="GI1-p9-5ZH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7q4-da-Dyk" firstAttribute="centerX" secondItem="ZUi-1e-0JH" secondAttribute="centerX" id="QgX-zP-sYe"/>
+                            <constraint firstItem="7q4-da-Dyk" firstAttribute="centerY" secondItem="ZUi-1e-0JH" secondAttribute="centerY" id="SuL-M8-GRh"/>
+                            <constraint firstItem="7q4-da-Dyk" firstAttribute="centerX" secondItem="ZUi-1e-0JH" secondAttribute="centerX" id="hAK-Ch-vla"/>
+                            <constraint firstItem="7q4-da-Dyk" firstAttribute="centerY" secondItem="ZUi-1e-0JH" secondAttribute="centerY" id="zhI-LA-WLZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hAK-Ch-vla"/>
+                                <exclude reference="zhI-LA-WLZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="hAK-Ch-vla"/>
+                                <include reference="zhI-LA-WLZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 3" id="J7B-6t-yne"/>
+                    <connections>
+                        <outlet property="punLable" destination="7q4-da-Dyk" id="XUm-if-CmE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AdE-FO-Ai8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-342" y="575"/>
         </scene>
-        <!--GOOD-A-->
+        <!--Good-A-->
         <scene sceneID="zTA-LY-NsK">
             <objects>
-                <viewController title="GOOD-A" id="cY6-vs-xfH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoodA" title="Good-A" id="cY6-vs-xfH" customClass="Good_A" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cgb-5m-T9H"/>
                         <viewControllerLayoutGuide type="bottom" id="24k-Fu-pYV"/>
@@ -438,17 +472,54 @@
                     <view key="view" contentMode="scaleToFill" id="ecr-ft-Rhp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funny_movie.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ca4-TL-wjP">
+                                <rect key="frame" x="27.5" y="224.5" width="320" height="218"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="24k-Fu-pYV" firstAttribute="top" secondItem="ca4-TL-wjP" secondAttribute="bottom" constant="8" symbolic="YES" id="8tl-nU-msT"/>
+                            <constraint firstItem="ca4-TL-wjP" firstAttribute="top" secondItem="ecr-ft-Rhp" secondAttribute="top" id="eIM-gW-JHu"/>
+                            <constraint firstItem="ca4-TL-wjP" firstAttribute="centerX" secondItem="ecr-ft-Rhp" secondAttribute="centerX" id="imj-cr-kge"/>
+                            <constraint firstItem="ca4-TL-wjP" firstAttribute="centerY" secondItem="ecr-ft-Rhp" secondAttribute="centerY" id="krj-1Z-wry"/>
+                            <constraint firstAttribute="trailing" secondItem="ca4-TL-wjP" secondAttribute="trailing" id="sCM-1X-CMr"/>
+                            <constraint firstItem="ca4-TL-wjP" firstAttribute="leading" secondItem="ecr-ft-Rhp" secondAttribute="leading" id="xAK-bh-Krj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eIM-gW-JHu"/>
+                                <exclude reference="imj-cr-kge"/>
+                                <exclude reference="krj-1Z-wry"/>
+                                <exclude reference="sCM-1X-CMr"/>
+                                <exclude reference="xAK-bh-Krj"/>
+                                <exclude reference="8tl-nU-msT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="eIM-gW-JHu"/>
+                                <include reference="sCM-1X-CMr"/>
+                                <include reference="xAK-bh-Krj"/>
+                                <include reference="8tl-nU-msT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="imj-cr-kge"/>
+                                <include reference="krj-1Z-wry"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0y4-FJ-0Wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714" y="1254"/>
+            <point key="canvasLocation" x="-714.69265367316348" y="1252"/>
         </scene>
-        <!--GOOD-B-->
+        <!--Good-B-->
         <scene sceneID="XYo-hV-ghs">
             <objects>
-                <viewController title="GOOD-B" id="CVa-RF-Lln" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoodB" title="Good-B" id="CVa-RF-Lln" customClass="Good_B" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bsx-9E-hOi"/>
                         <viewControllerLayoutGuide type="bottom" id="tOc-rf-xPh"/>
@@ -456,7 +527,47 @@
                     <view key="view" contentMode="scaleToFill" id="3gZ-5x-9tG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dadJoke" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5e-Tk-bL1">
+                                <rect key="frame" x="79" y="312" width="217" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Funny huh?">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s5e-Tk-bL1" firstAttribute="centerX" secondItem="3gZ-5x-9tG" secondAttribute="centerX" id="Ksr-pI-8wc"/>
+                            <constraint firstItem="s5e-Tk-bL1" firstAttribute="centerX" secondItem="3gZ-5x-9tG" secondAttribute="centerX" id="bgT-VG-lKx"/>
+                            <constraint firstItem="s5e-Tk-bL1" firstAttribute="centerY" secondItem="3gZ-5x-9tG" secondAttribute="centerY" id="rD2-2P-Hdp"/>
+                            <constraint firstItem="s5e-Tk-bL1" firstAttribute="centerY" secondItem="3gZ-5x-9tG" secondAttribute="centerY" id="uRC-Ts-UTn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ksr-pI-8wc"/>
+                                <exclude reference="bgT-VG-lKx"/>
+                                <exclude reference="rD2-2P-Hdp"/>
+                                <exclude reference="uRC-Ts-UTn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Ksr-pI-8wc"/>
+                                <include reference="uRC-Ts-UTn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="bgT-VG-lKx"/>
+                                <include reference="rD2-2P-Hdp"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyE-0V-W3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -464,4 +575,7 @@
             <point key="canvasLocation" x="-66" y="1254"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="funny_movie.gif" width="320" height="218"/>
+    </resources>
 </document>
