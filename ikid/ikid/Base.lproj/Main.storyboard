@@ -100,7 +100,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="BMO-nt-rmU"/>
+                    <tabBarItem key="tabBarItem" title="Pun" id="BMO-nt-rmU"/>
                     <connections>
                         <outlet property="punLable" destination="bG7-ci-yqv" id="NJz-Ek-cof"/>
                     </connections>
@@ -314,7 +314,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="dGz-29-gFK"/>
+                    <tabBarItem key="tabBarItem" title="Dad" id="dGz-29-gFK"/>
                     <connections>
                         <outlet property="dadJoke" destination="Tcq-Jp-xWU" id="5tO-JC-jas"/>
                     </connections>
@@ -796,7 +796,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="liP-TP-NxM"/>
+                    <tabBarItem key="tabBarItem" title="Knock Knock" id="liP-TP-NxM"/>
                     <connections>
                         <outlet property="punLable" destination="zez-wr-0ij" id="rzE-4B-Bn2"/>
                     </connections>
@@ -909,7 +909,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" id="J7B-6t-yne"/>
+                    <tabBarItem key="tabBarItem" title="Good" id="J7B-6t-yne"/>
                     <connections>
                         <outlet property="punLable" destination="7q4-da-Dyk" id="XUm-if-CmE"/>
                     </connections>
